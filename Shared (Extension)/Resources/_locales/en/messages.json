@@ -1,0 +1,10 @@
+{
+    "extension_name": {
+        "message": "Newsfeed toggle for Facebook",
+        "description": "The display name for the extension."
+    },
+    "extension_description": {
+        "message": "This is Newsfeed toggle for Facebook. You should tell us what your extension does here.",
+        "description": "Description of what the extension does."
+    }
+}
