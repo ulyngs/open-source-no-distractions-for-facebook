@@ -2,8 +2,8 @@
     "manifest_version": 2,
     "default_locale": "en",
 
-    "name": "__MSG_extension_name__",
-    "description": "__MSG_extension_description__",
+    "name": "Newsfeed toggle for Facebook",
+    "description": "This app hides the newsfeed by default, and adds a button that you can click to turn it on and off.",
     "version": "1.0",
 
     "icons": {
@@ -20,8 +20,9 @@
     },
 
     "content_scripts": [{
+        "css": [ "style.css" ],
         "js": [ "content.js" ],
-        "matches": [ "*://example.com/*" ]
+        "matches": [ "*://www.facebook.com/*" ]
     }],
 
     "browser_action": {
@@ -34,5 +35,5 @@
         }
     },
 
-    "permissions": [ ]
+    "permissions": [ "nativeMessaging" ]
 }

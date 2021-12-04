@@ -45,6 +45,8 @@
 		D7DBE5F1275B664300585E64 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = D7DBE5A1275B664300585E64 /* popup.css */; };
 		D7DBE5F2275B664300585E64 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = D7DBE5A2275B664300585E64 /* popup.js */; };
 		D7DBE5F3275B664300585E64 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = D7DBE5A2275B664300585E64 /* popup.js */; };
+		D7DBE605275B678A00585E64 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = D7DBE604275B678900585E64 /* style.css */; };
+		D7DBE606275B678A00585E64 /* style.css in Resources */ = {isa = PBXBuildFile; fileRef = D7DBE604275B678900585E64 /* style.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +122,7 @@
 		D7DBE5CF275B664300585E64 /* Newsfeed toggle for Facebook Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Newsfeed toggle for Facebook Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DBE5D4275B664300585E64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7DBE5D5275B664300585E64 /* Newsfeed toggle for Facebook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Newsfeed toggle for Facebook.entitlements"; sourceTree = "<group>"; };
+		D7DBE604275B678900585E64 /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +208,7 @@
 				D7DBE59D275B664300585E64 /* manifest.json */,
 				D7DBE59E275B664300585E64 /* background.js */,
 				D7DBE59F275B664300585E64 /* content.js */,
+				D7DBE604275B678900585E64 /* style.css */,
 				D7DBE5A0275B664300585E64 /* popup.html */,
 				D7DBE5A1275B664300585E64 /* popup.css */,
 				D7DBE5A2275B664300585E64 /* popup.js */,
@@ -422,6 +426,7 @@
 				D7DBE5E4275B664300585E64 /* _locales in Resources */,
 				D7DBE5EC275B664300585E64 /* content.js in Resources */,
 				D7DBE5F2275B664300585E64 /* popup.js in Resources */,
+				D7DBE605275B678A00585E64 /* style.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +442,7 @@
 				D7DBE5E5275B664300585E64 /* _locales in Resources */,
 				D7DBE5ED275B664300585E64 /* content.js in Resources */,
 				D7DBE5F3275B664300585E64 /* popup.js in Resources */,
+				D7DBE606275B678A00585E64 /* style.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
