@@ -24,3 +24,7 @@ button {
   display: inline-block;
   font-size: 14px;
 }
+
+p {
+    font-size: 0.9em;
+}
