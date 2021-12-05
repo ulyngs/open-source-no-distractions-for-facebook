@@ -46,33 +46,3 @@ div[data-pagelet="RightRail"] div[data-visualcompletion="ignore-dynamic"] > div[
     visibility: hidden;
 }
 
-
-
-
-/************** FOR OLD FACEBOOK LAYOUT ******************/
-/* stories and newsfeed */
-/*#stories_pagelet_below_composer,
-div[aria-label="News Feed"] {
-    visibility: hidden !important;
-}*/
-
-/* sponsored */
-#pagelet_ego_pane {
-    display: none !important;
-}
-
-/* footer */
-#pagelet_rhc_footer {
-    display: none !important;
-}
-
-/* chat side bar */
-.fbChatSidebar {
-    display: none !important;
-}
-
-/* hide posting prompt */
-/*#pagelet_composer div[aria-label="Create a post"] {
-    display: none !important;
-}*/
-
