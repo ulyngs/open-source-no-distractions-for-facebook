@@ -16,6 +16,21 @@ chrome.runtime.onMessage.addListener(
             }
         }
         
+        if(request.method == "changeMobileFeed"){
+            mobileFeed = document.querySelector('#m_news_feed_stream');
+            
+            if (mobileFeed.style.display === "none") {
+                mobileFeed.style.display = "block";
+                sendResponse({text: "mobileFeed visible", method: "changeMobileFeed"});
+            } else if (mobileFeed.style.display === "block") {
+                mobileFeed.style.display = "none";
+                sendResponse({text: "mobileFeed hidden", method: "changeMobileFeed"});
+            } else {
+                mobileFeed.style.display = "block";
+                sendResponse({text: "mobileFeed visible", method: "changeMobileFeed"});
+            }
+        }
+        
         if(request.method == "changeChat"){
             chatElements = document.querySelectorAll('div[data-pagelet="RightRail"] div[data-visualcompletion="ignore-dynamic"] > div[class = "l9j0dhe7"');
             

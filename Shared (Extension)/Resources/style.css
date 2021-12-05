@@ -32,6 +32,11 @@ div[data-pagelet="GroupFeed"] div.feed {
     display: block;
 }
 
+/* hide newsfeed on iphone */
+#m_news_feed_stream {
+    display: none;
+}
+
 
 /****** RIGHT SIDE BAR ********/
 /* hide sponsored content */

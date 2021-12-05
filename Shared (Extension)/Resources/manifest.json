@@ -22,7 +22,7 @@
     "content_scripts": [{
         "css": [ "style.css" ],
         "js": [ "content.js" ],
-        "matches": [ "*://www.facebook.com/*" ]
+        "matches": [ "*://www.facebook.com/*", "*://m.facebook.com/*" ]
     }],
 
     "browser_action": {
