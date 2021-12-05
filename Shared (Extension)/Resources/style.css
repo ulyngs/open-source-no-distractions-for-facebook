@@ -18,7 +18,7 @@ div[data-pagelet="Stories"] {
 
 /* hide video chatting prompt */
 div[data-pagelet="VideoChatHomeUnit"] {
-    display: none !important;
+    display: none;
 }
 
 /*** NEWSFEED ***/

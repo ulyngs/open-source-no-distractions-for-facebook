@@ -48,10 +48,25 @@ chrome.runtime.onMessage.addListener(
                 sendResponse({text: "stories visible", method: "changeStories"});
             } else if (stories.style.display === "block") {
                 stories.style.display = "none";
-                sendResponse({text: "stories hidden", method: "changeFeed"});
+                sendResponse({text: "stories hidden", method: "changeStories"});
             } else {
                 stories.style.display = "block";
-                sendResponse({text: "stories visible", method: "changeFeed"});
+                sendResponse({text: "stories visible", method: "changeStories"});
+            }
+        }
+        
+        if(request.method == "changeVideo"){
+            video = document.querySelector('div[data-pagelet="VideoChatHomeUnit"]');
+            
+            if (video.style.display === "none") {
+                video.style.display = "block";
+                sendResponse({text: "video visible", method: "changeVideo"});
+            } else if (video.style.display === "block") {
+                video.style.display = "none";
+                sendResponse({text: "video hidden", method: "changeVideo"});
+            } else {
+                video.style.display = "block";
+                sendResponse({text: "video visible", method: "changeVideo"});
             }
         }
     }

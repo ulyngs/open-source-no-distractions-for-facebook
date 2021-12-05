@@ -46,4 +46,20 @@ document.addEventListener('DOMContentLoaded', function() {
           });
         });
     }, false);
+    
+    var videoButton = document.getElementById('videoToggle');
+    videoButton.addEventListener('click', function() {
+      chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+          chrome.tabs.sendMessage(tabs[0].id, {method: "changeVideo"}, function(response) {
+              if(response.method == "changeVideo"){
+                  if(response.text === "video visible"){
+                      console.log("Video prompt is visible")
+                  } else {
+                      console.log("Video prompt is hidden")
+                  }
+              }
+          });
+        });
+    }, false);
+    
 }, false);
