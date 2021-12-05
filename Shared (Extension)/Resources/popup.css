@@ -28,3 +28,8 @@ button {
 p {
     font-size: 0.9em;
 }
+
+.content-toggles {
+    text-align: left;
+    font-size: 1em;
+}
