@@ -1,19 +1,18 @@
 /******** MENU BAR ********/
-/* hide watch link */
-/*div[role="navigation"] > ul > li:nth-child(2),
-div[role="navigation"] > ul > li:nth-child(5) {
-    display: none !important;
-}*/
 
-/* hide gaming link */
-a[aria-label="Gaming"],
-a[aria-label="Watch"] {
+/**** hide gaming link ****/
+a[aria-label="Gaming"] {
+    display: none !important;
+}
+
+/* the gaming link is number 3 */
+div[aria-label="Facebook"] ul.thodolrn.ojvp67qx.taijpn5t.buofh1pr.j83agx80.aovydwv3.bqdfd6uv > li:nth-child(3) {
     display: none !important;
 }
 
 /****** CENTRE OF FRONT PAGE ********/
 /* hide stories */
-div[aria-label="Stories"] {
+div[data-pagelet="Stories"] {
     display: none;
 }
 
