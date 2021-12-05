@@ -3,15 +3,15 @@
     "default_locale": "en",
 
     "name": "Newsfeed toggle for Facebook",
-    "description": "This app hides the newsfeed by default, and adds a button that you can click to turn it on and off.",
+    "description": "Hides the newsfeed and other distractions on Facebook, and lets you toggle them on when you need them.",
     "version": "1.0",
 
     "icons": {
-        "48": "images/icon-48.png",
-        "96": "images/icon-96.png",
-        "128": "images/icon-128.png",
-        "256": "images/icon-256.png",
-        "512": "images/icon-512.png"
+        "48": "images/fb-icon48.png",
+        "96": "images/fb-icon96.png",
+        "128": "images/fb-icon128.png",
+        "256": "images/fb-icon256.png",
+        "512": "images/fb-icon512.png"
     },
 
     "background": {
@@ -28,10 +28,10 @@
     "browser_action": {
         "default_popup": "popup.html",
         "default_icon": {
-            "16": "images/toolbar-icon-16.png",
-            "19": "images/toolbar-icon-19.png",
-            "32": "images/toolbar-icon-32.png",
-            "38": "images/toolbar-icon-38.png"
+            "16": "images/toolbar-grey16.png",
+            "19": "images/toolbar-grey19.png",
+            "32": "images/toolbar-grey32.png",
+            "38": "images/toolbar-grey38.png"
         }
     },
 
