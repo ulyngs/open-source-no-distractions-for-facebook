@@ -35,8 +35,8 @@ div[data-pagelet="RightRail"] > div > span > div > div.l9j0dhe7 {
 }
 
 /* hide chat side bar */
-div[data-pagelet="RightRail"] div[data-visualcompletion="ignore-dynamic"] > div.l9j0dhe7 {
-    display: none !important;
+div[data-pagelet="RightRail"] div[data-visualcompletion="ignore-dynamic"] > div[class="l9j0dhe7"] {
+    visibility: hidden;
 }
 
 /******* MAKE SURE FEED IS STILL PRESENT ON GROUPS *******/
