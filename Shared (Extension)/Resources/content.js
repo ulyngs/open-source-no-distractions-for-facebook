@@ -39,6 +39,21 @@ chrome.runtime.onMessage.addListener(
                 sendResponse({text: "chat visible", method: "changeChat"});
             }
         }
+        
+        if(request.method == "changeStories"){
+            stories = document.querySelector('div[data-pagelet="Stories"]');
+            
+            if (stories.style.display === "none") {
+                stories.style.display = "block";
+                sendResponse({text: "stories visible", method: "changeStories"});
+            } else if (stories.style.display === "block") {
+                stories.style.display = "none";
+                sendResponse({text: "stories hidden", method: "changeFeed"});
+            } else {
+                stories.style.display = "block";
+                sendResponse({text: "stories visible", method: "changeFeed"});
+            }
+        }
     }
 );
 
