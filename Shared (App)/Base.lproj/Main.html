@@ -4,17 +4,24 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5, user-scalable=yes">
 
     <link rel="stylesheet" href="../Style.css">
     <script src="../Script.js" defer></script>
 </head>
 <body>
-    <img src="../Icon.png" width="128" height="128" alt="Newsfeed toggle for Facebook Icon">
-    <p class="platform-ios">You can turn on Newsfeed toggle for Facebook’s Safari extension in Settings.</p>
-    <p class="platform-mac state-unknown">You can turn on Newsfeed toggle for Facebook’s extension in Safari Extensions preferences.</p>
-    <p class="platform-mac state-on">Newsfeed toggle for Facebook’s extension is currently on. You can turn it off in Safari Extensions preferences.</p>
-    <p class="platform-mac state-off">Newsfeed toggle for Facebook’s extension is currently off. You can turn it on in Safari Extensions preferences.</p>
+    <img class="platform-mac platform-ipad app-icon" src="../Icon.png" alt="Hide distractions on YouTube Icon">
+    <p class="platform-ios platform-ipad">This Safari extension hides the newsfeed and other distractions on Facebook, and lets you toggle them on when you need them. The extension is <a href="https://github.com/ulyngs/hide-distractions-on-youtube-universal">open source</a>.<br><br> To turn it on, go to Settings > Safari > Extensions, then tap on the extension and switch it on, and allow it to access facebook.com <br>
+        <img class="illustration-image-ipad" src="../extension_turn_on_ipad.png" alt="Extensions section in iOS settings">
+    </p>
+    <p class="platform-ios platform-iphone">This Safari extension hides the newsfeed and other distractions on Facebook, and lets you toggle them on when you need them. The extension is <a href="https://github.com/ulyngs/hide-distractions-on-youtube-universal">open source</a>.<br><br> To turn it on, go to Settings > Safari > Extensions, then tap on the extension to switch it on and allow access to youtube.com<br>
+        <img class="iphone-illustration-image" src="../extension_turn_on_iphone.png" alt="Extensions section in iOS settings">
+    </p>
+    <p class="platform-mac state-unknown">This Safari extension hides the newsfeed and other distractions on Facebook, and lets you toggle them on when you need them. The extension is <a href="https://github.com/ulyngs/hide-distractions-on-youtube-universal">open source</a>.<br>
+    <br>To turn it on, first go to Safari Extensions preferences. Then go to Facebook and click the extension icon in the toolbar.
+    </p>
+    <p class="platform-mac state-on">The 'Newsfeed toggle for Facebook' extension is currently on. You can turn it off in Safari Extensions preferences.</p>
+    <p class="platform-mac state-off">The 'Newsfeed toggle for Facebook' extension is currently off. You can turn it on in Safari Extensions preferences.</p>
     <button class="platform-mac open-preferences">Quit and Open Safari Extensions Preferences…</button>
 </body>
 </html>
