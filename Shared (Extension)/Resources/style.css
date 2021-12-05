@@ -22,10 +22,17 @@ div[data-pagelet="VideoChatHomeUnit"] {
     display: none !important;
 }
 
+/*** NEWSFEED ***/
 /* hide newsfeed */
 .pedkr2u6.tn0ko95a.pnx7fd3z div[role="feed"] {
     visibility: hidden;
 }
+
+/* MAKE SURE FEED IS STILL PRESENT ON GROUPS */
+div[data-pagelet="GroupFeed"] div.feed {
+    display: block;
+}
+
 
 /****** RIGHT SIDE BAR ********/
 /* hide sponsored content */
@@ -39,10 +46,7 @@ div[data-pagelet="RightRail"] div[data-visualcompletion="ignore-dynamic"] > div[
     visibility: hidden;
 }
 
-/******* MAKE SURE FEED IS STILL PRESENT ON GROUPS *******/
-div[data-pagelet="GroupFeed"] div.feed {
-    display: block;
-}
+
 
 
 /************** FOR OLD FACEBOOK LAYOUT ******************/
