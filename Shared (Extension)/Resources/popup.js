@@ -1,4 +1,6 @@
 // popup.js
+// https://developer.chrome.com/docs/extensions/mv3/messaging/
+
 document.addEventListener('DOMContentLoaded', function() {
     var checkButton = document.getElementById('feedToggle');
     checkButton.addEventListener('click', function() {
@@ -6,9 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
         chrome.tabs.sendMessage(tabs[0].id, {method: "changeFeed"}, function(response) {
             if(response.method == "changeFeed"){
                 if(response.text === "newsfeed visible"){
-                    checkButton.innerHTML = "Hide newsfeed"
+                    console.log("Newsfeed is visible")
                 } else {
-                    checkButton.innerHTML = "Show newsfeed";
+                    console.log("Newsfeed is hidden")
                 }
             }
         });
@@ -21,9 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
           chrome.tabs.sendMessage(tabs[0].id, {method: "changeChat"}, function(response) {
               if(response.method == "changeChat"){
                   if(response.text === "chat visible"){
-                      chatButton.innerHTML = "Hide chat"
+                      console.log("Chat is visible")
                   } else {
-                      chatButton.innerHTML = "Show chat";
+                      console.log("Chat is hidden")
                   }
               }
           });
