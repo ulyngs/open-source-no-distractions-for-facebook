@@ -35,6 +35,10 @@ p {
     margin-bottom: 2em;
 }
 
+a:visited {
+    color: blue;
+}
+
 
 /******* HIDE IRRELEVANT TOGGLES *******/
 /* iPhone */
