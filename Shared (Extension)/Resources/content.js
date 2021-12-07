@@ -1,9 +1,65 @@
 // content.js
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
+        feed = document.querySelector('.pedkr2u6.tn0ko95a.pnx7fd3z div[role="feed"]');
+        mobileFeed = document.querySelector('#m_news_feed_stream');
+        chatElements = document.querySelectorAll('div[data-pagelet="RightRail"] div[data-visualcompletion="ignore-dynamic"] > div[class = "l9j0dhe7"');
+        stories = document.querySelector('div[data-pagelet="Stories"]');
+        video = document.querySelector('div[data-pagelet="VideoChatHomeUnit"]');
+        
+        // check for visibility
+        if(request.method == "checkFeed"){
+            if (feed.style.visibility === "hidden") {
+                sendResponse({text: "hidden", method: "checkFeed"});
+            } else if (feed.style.visibility === "visible") {
+                sendResponse({text: "visible", method: "checkFeed"});
+            } else {
+                sendResponse({text: "hidden", method: "checkFeed"});
+            }
+        }
+        
+        if(request.method == "checkMobileFeed"){
+            if (mobileFeed.style.display === "none") {
+                sendResponse({text: "hidden", method: "checkMobileFeed"});
+            } else if (mobileFeed.style.display === "block") {
+                sendResponse({text: "visible", method: "checkMobileFeed"});
+            } else {
+                sendResponse({text: "hidden", method: "checkMobileFeed"});
+            }
+        }
+        
+        if(request.method == "checkChat"){
+            if (chatElements[0].style.visibility === "hidden") {
+                sendResponse({text: "hidden", method: "checkChat"});
+            } else if (chatElements[0].style.visibility === "visible") {
+                sendResponse({text: "visible", method: "checkChat"});
+            } else {
+                sendResponse({text: "joddem", method: "checkChat"});
+            }
+        }
+        
+        if(request.method == "checkStories"){
+            if (stories.style.display === "none") {
+                sendResponse({text: "hidden", method: "checkStories"});
+            } else if (stories.style.display === "block") {
+                sendResponse({text: "visible", method: "checkStories"});
+            } else {
+                sendResponse({text: "hidden", method: "checkStories"});
+            }
+        }
+        
+        if(request.method == "checkVideo"){
+            if (video.style.display === "none") {
+                sendResponse({text: "hidden", method: "checkVideo"});
+            } else if (video.style.display === "block") {
+                sendResponse({text: "visible", method: "checkVideo"});
+            } else {
+                sendResponse({text: "hidden", method: "checkVideo"});
+            }
+        }
+        
+        // change visibility
         if(request.method == "changeFeed"){
-            feed = document.querySelector('.pedkr2u6.tn0ko95a.pnx7fd3z div[role="feed"]');
-            
             if (feed.style.visibility === "hidden") {
                 feed.style.visibility = "visible";
                 sendResponse({text: "newsfeed visible", method: "changeFeed"});
@@ -17,8 +73,6 @@ chrome.runtime.onMessage.addListener(
         }
         
         if(request.method == "changeMobileFeed"){
-            mobileFeed = document.querySelector('#m_news_feed_stream');
-            
             if (mobileFeed.style.display === "none") {
                 mobileFeed.style.display = "block";
                 sendResponse({text: "mobileFeed visible", method: "changeMobileFeed"});
@@ -32,8 +86,6 @@ chrome.runtime.onMessage.addListener(
         }
         
         if(request.method == "changeChat"){
-            chatElements = document.querySelectorAll('div[data-pagelet="RightRail"] div[data-visualcompletion="ignore-dynamic"] > div[class = "l9j0dhe7"');
-            
             if (chatElements[0].style.visibility === "hidden") {
                 for (var i = 0, max = chatElements.length; i < max; i++) {
                     chatElements[i].style.visibility = "visible";
@@ -54,8 +106,6 @@ chrome.runtime.onMessage.addListener(
         }
         
         if(request.method == "changeStories"){
-            stories = document.querySelector('div[data-pagelet="Stories"]');
-            
             if (stories.style.display === "none") {
                 stories.style.display = "block";
                 sendResponse({text: "stories visible", method: "changeStories"});
@@ -69,8 +119,6 @@ chrome.runtime.onMessage.addListener(
         }
         
         if(request.method == "changeVideo"){
-            video = document.querySelector('div[data-pagelet="VideoChatHomeUnit"]');
-            
             if (video.style.display === "none") {
                 video.style.display = "block";
                 sendResponse({text: "video visible", method: "changeVideo"});
