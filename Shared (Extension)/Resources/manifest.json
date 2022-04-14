@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "default_locale": "en",
 
-    "name": "Newsfeed toggle for Facebook",
+    "name": "Newsfeed toggle on Facebook",
     "description": "Hides the newsfeed and other distractions on Facebook, and lets you toggle them on when you need them.",
     "version": "1.0",
 

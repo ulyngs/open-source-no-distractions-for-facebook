@@ -13,8 +13,8 @@
 		D7DBE5B3275B664300585E64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DBE5B1275B664300585E64 /* Main.storyboard */; };
 		D7DBE5BC275B664300585E64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DBE5BB275B664300585E64 /* AppDelegate.swift */; };
 		D7DBE5BF275B664300585E64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DBE5BD275B664300585E64 /* Main.storyboard */; };
-		D7DBE5C6275B664300585E64 /* Newsfeed toggle for Facebook Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D7DBE5C5275B664300585E64 /* Newsfeed toggle for Facebook Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		D7DBE5D0275B664300585E64 /* Newsfeed toggle for Facebook Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D7DBE5CF275B664300585E64 /* Newsfeed toggle for Facebook Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D7DBE5C6275B664300585E64 /* Newsfeed toggle on Facebook Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D7DBE5C5275B664300585E64 /* Newsfeed toggle on Facebook Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D7DBE5D0275B664300585E64 /* Newsfeed toggle on Facebook Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D7DBE5CF275B664300585E64 /* Newsfeed toggle on Facebook Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D7DBE5D6275B664300585E64 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = D7DBE591275B664200585E64 /* Main.html */; };
 		D7DBE5D7275B664300585E64 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = D7DBE591275B664200585E64 /* Main.html */; };
 		D7DBE5D8275B664300585E64 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D7DBE593275B664200585E64 /* Icon.png */; };
@@ -76,7 +76,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				D7DBE5C6275B664300585E64 /* Newsfeed toggle for Facebook Extension.appex in Embed App Extensions */,
+				D7DBE5C6275B664300585E64 /* Newsfeed toggle on Facebook Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,7 +87,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				D7DBE5D0275B664300585E64 /* Newsfeed toggle for Facebook Extension.appex in Embed App Extensions */,
+				D7DBE5D0275B664300585E64 /* Newsfeed toggle on Facebook Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,21 +110,21 @@
 		D7DBE5A0275B664300585E64 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
 		D7DBE5A1275B664300585E64 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
 		D7DBE5A2275B664300585E64 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
-		D7DBE5A7275B664300585E64 /* Newsfeed toggle for Facebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Newsfeed toggle for Facebook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7DBE5A7275B664300585E64 /* Newsfeed toggle on Facebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Newsfeed toggle on Facebook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DBE5AA275B664300585E64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7DBE5AC275B664300585E64 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D7DBE5AF275B664300585E64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7DBE5B2275B664300585E64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7DBE5B4275B664300585E64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7DBE5B9275B664300585E64 /* Newsfeed toggle for Facebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Newsfeed toggle for Facebook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7DBE5B9275B664300585E64 /* Newsfeed toggle on Facebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Newsfeed toggle on Facebook.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DBE5BB275B664300585E64 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7DBE5BE275B664300585E64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D7DBE5C0275B664300585E64 /* Newsfeed toggle for Facebook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Newsfeed toggle for Facebook.entitlements"; sourceTree = "<group>"; };
-		D7DBE5C5275B664300585E64 /* Newsfeed toggle for Facebook Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Newsfeed toggle for Facebook Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7DBE5C0275B664300585E64 /* Newsfeed toggle on Facebook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Newsfeed toggle on Facebook.entitlements"; sourceTree = "<group>"; };
+		D7DBE5C5275B664300585E64 /* Newsfeed toggle on Facebook Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Newsfeed toggle on Facebook Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DBE5CA275B664300585E64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7DBE5CF275B664300585E64 /* Newsfeed toggle for Facebook Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Newsfeed toggle for Facebook Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7DBE5CF275B664300585E64 /* Newsfeed toggle on Facebook Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Newsfeed toggle on Facebook Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DBE5D4275B664300585E64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D7DBE5D5275B664300585E64 /* Newsfeed toggle for Facebook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Newsfeed toggle for Facebook.entitlements"; sourceTree = "<group>"; };
+		D7DBE5D5275B664300585E64 /* Newsfeed toggle on Facebook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Newsfeed toggle on Facebook.entitlements"; sourceTree = "<group>"; };
 		D7DBE604275B678900585E64 /* style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = style.css; sourceTree = "<group>"; };
 		D7F995AC275CD1380090EDFB /* extension_turn_on_ipad.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = extension_turn_on_ipad.PNG; sourceTree = "<group>"; };
 		D7F995AF275CD3530090EDFB /* extension_turn_on_iphone.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = extension_turn_on_iphone.PNG; sourceTree = "<group>"; };
@@ -224,10 +224,10 @@
 		D7DBE5A8275B664300585E64 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D7DBE5A7275B664300585E64 /* Newsfeed toggle for Facebook.app */,
-				D7DBE5B9275B664300585E64 /* Newsfeed toggle for Facebook.app */,
-				D7DBE5C5275B664300585E64 /* Newsfeed toggle for Facebook Extension.appex */,
-				D7DBE5CF275B664300585E64 /* Newsfeed toggle for Facebook Extension.appex */,
+				D7DBE5A7275B664300585E64 /* Newsfeed toggle on Facebook.app */,
+				D7DBE5B9275B664300585E64 /* Newsfeed toggle on Facebook.app */,
+				D7DBE5C5275B664300585E64 /* Newsfeed toggle on Facebook Extension.appex */,
+				D7DBE5CF275B664300585E64 /* Newsfeed toggle on Facebook Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -251,7 +251,7 @@
 			children = (
 				D7DBE5BB275B664300585E64 /* AppDelegate.swift */,
 				D7DBE5BD275B664300585E64 /* Main.storyboard */,
-				D7DBE5C0275B664300585E64 /* Newsfeed toggle for Facebook.entitlements */,
+				D7DBE5C0275B664300585E64 /* Newsfeed toggle on Facebook.entitlements */,
 			);
 			path = "macOS (App)";
 			sourceTree = "<group>";
@@ -268,7 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				D7DBE5D4275B664300585E64 /* Info.plist */,
-				D7DBE5D5275B664300585E64 /* Newsfeed toggle for Facebook.entitlements */,
+				D7DBE5D5275B664300585E64 /* Newsfeed toggle on Facebook.entitlements */,
 			);
 			path = "macOS (Extension)";
 			sourceTree = "<group>";
@@ -276,9 +276,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D7DBE5A6275B664300585E64 /* Newsfeed toggle for Facebook (iOS) */ = {
+		D7DBE5A6275B664300585E64 /* Newsfeed toggle on Facebook (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D7DBE5FA275B664300585E64 /* Build configuration list for PBXNativeTarget "Newsfeed toggle for Facebook (iOS)" */;
+			buildConfigurationList = D7DBE5FA275B664300585E64 /* Build configuration list for PBXNativeTarget "Newsfeed toggle on Facebook (iOS)" */;
 			buildPhases = (
 				D7DBE5A3275B664300585E64 /* Sources */,
 				D7DBE5A4275B664300585E64 /* Frameworks */,
@@ -290,14 +290,14 @@
 			dependencies = (
 				D7DBE5C8275B664300585E64 /* PBXTargetDependency */,
 			);
-			name = "Newsfeed toggle for Facebook (iOS)";
+			name = "Newsfeed toggle on Facebook (iOS)";
 			productName = "Newsfeed toggle for Facebook (iOS)";
-			productReference = D7DBE5A7275B664300585E64 /* Newsfeed toggle for Facebook.app */;
+			productReference = D7DBE5A7275B664300585E64 /* Newsfeed toggle on Facebook.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D7DBE5B8275B664300585E64 /* Newsfeed toggle for Facebook (macOS) */ = {
+		D7DBE5B8275B664300585E64 /* Newsfeed toggle on Facebook (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D7DBE601275B664300585E64 /* Build configuration list for PBXNativeTarget "Newsfeed toggle for Facebook (macOS)" */;
+			buildConfigurationList = D7DBE601275B664300585E64 /* Build configuration list for PBXNativeTarget "Newsfeed toggle on Facebook (macOS)" */;
 			buildPhases = (
 				D7DBE5B5275B664300585E64 /* Sources */,
 				D7DBE5B6275B664300585E64 /* Frameworks */,
@@ -309,14 +309,14 @@
 			dependencies = (
 				D7DBE5D2275B664300585E64 /* PBXTargetDependency */,
 			);
-			name = "Newsfeed toggle for Facebook (macOS)";
+			name = "Newsfeed toggle on Facebook (macOS)";
 			productName = "Newsfeed toggle for Facebook (macOS)";
-			productReference = D7DBE5B9275B664300585E64 /* Newsfeed toggle for Facebook.app */;
+			productReference = D7DBE5B9275B664300585E64 /* Newsfeed toggle on Facebook.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D7DBE5C4275B664300585E64 /* Newsfeed toggle for Facebook Extension (iOS) */ = {
+		D7DBE5C4275B664300585E64 /* Newsfeed toggle on Facebook Extension (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D7DBE5F6275B664300585E64 /* Build configuration list for PBXNativeTarget "Newsfeed toggle for Facebook Extension (iOS)" */;
+			buildConfigurationList = D7DBE5F6275B664300585E64 /* Build configuration list for PBXNativeTarget "Newsfeed toggle on Facebook Extension (iOS)" */;
 			buildPhases = (
 				D7DBE5C1275B664300585E64 /* Sources */,
 				D7DBE5C2275B664300585E64 /* Frameworks */,
@@ -326,14 +326,14 @@
 			);
 			dependencies = (
 			);
-			name = "Newsfeed toggle for Facebook Extension (iOS)";
+			name = "Newsfeed toggle on Facebook Extension (iOS)";
 			productName = "Newsfeed toggle for Facebook Extension (iOS)";
-			productReference = D7DBE5C5275B664300585E64 /* Newsfeed toggle for Facebook Extension.appex */;
+			productReference = D7DBE5C5275B664300585E64 /* Newsfeed toggle on Facebook Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		D7DBE5CE275B664300585E64 /* Newsfeed toggle for Facebook Extension (macOS) */ = {
+		D7DBE5CE275B664300585E64 /* Newsfeed toggle on Facebook Extension (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D7DBE5FD275B664300585E64 /* Build configuration list for PBXNativeTarget "Newsfeed toggle for Facebook Extension (macOS)" */;
+			buildConfigurationList = D7DBE5FD275B664300585E64 /* Build configuration list for PBXNativeTarget "Newsfeed toggle on Facebook Extension (macOS)" */;
 			buildPhases = (
 				D7DBE5CB275B664300585E64 /* Sources */,
 				D7DBE5CC275B664300585E64 /* Frameworks */,
@@ -343,9 +343,9 @@
 			);
 			dependencies = (
 			);
-			name = "Newsfeed toggle for Facebook Extension (macOS)";
+			name = "Newsfeed toggle on Facebook Extension (macOS)";
 			productName = "Newsfeed toggle for Facebook Extension (macOS)";
-			productReference = D7DBE5CF275B664300585E64 /* Newsfeed toggle for Facebook Extension.appex */;
+			productReference = D7DBE5CF275B664300585E64 /* Newsfeed toggle on Facebook Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -372,7 +372,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D7DBE58E275B664100585E64 /* Build configuration list for PBXProject "Newsfeed toggle for Facebook" */;
+			buildConfigurationList = D7DBE58E275B664100585E64 /* Build configuration list for PBXProject "Newsfeed toggle on Facebook" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -385,10 +385,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D7DBE5A6275B664300585E64 /* Newsfeed toggle for Facebook (iOS) */,
-				D7DBE5B8275B664300585E64 /* Newsfeed toggle for Facebook (macOS) */,
-				D7DBE5C4275B664300585E64 /* Newsfeed toggle for Facebook Extension (iOS) */,
-				D7DBE5CE275B664300585E64 /* Newsfeed toggle for Facebook Extension (macOS) */,
+				D7DBE5A6275B664300585E64 /* Newsfeed toggle on Facebook (iOS) */,
+				D7DBE5B8275B664300585E64 /* Newsfeed toggle on Facebook (macOS) */,
+				D7DBE5C4275B664300585E64 /* Newsfeed toggle on Facebook Extension (iOS) */,
+				D7DBE5CE275B664300585E64 /* Newsfeed toggle on Facebook Extension (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -499,12 +499,12 @@
 /* Begin PBXTargetDependency section */
 		D7DBE5C8275B664300585E64 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D7DBE5C4275B664300585E64 /* Newsfeed toggle for Facebook Extension (iOS) */;
+			target = D7DBE5C4275B664300585E64 /* Newsfeed toggle on Facebook Extension (iOS) */;
 			targetProxy = D7DBE5C7275B664300585E64 /* PBXContainerItemProxy */;
 		};
 		D7DBE5D2275B664300585E64 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D7DBE5CE275B664300585E64 /* Newsfeed toggle for Facebook Extension (macOS) */;
+			target = D7DBE5CE275B664300585E64 /* Newsfeed toggle on Facebook Extension (macOS) */;
 			targetProxy = D7DBE5D1275B664300585E64 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -664,7 +664,7 @@
 				DEVELOPMENT_TEAM = 7YEYWQKK25;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Newsfeed toggle for Facebook Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "Newsfeed toggle on Facebook Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -678,7 +678,7 @@
 					SafariServices,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ulriklyngs.Newsfeed-toggle-for-Facebook.Extension";
-				PRODUCT_NAME = "Newsfeed toggle for Facebook Extension";
+				PRODUCT_NAME = "Newsfeed toggle on Facebook Extension";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -695,7 +695,7 @@
 				DEVELOPMENT_TEAM = 7YEYWQKK25;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Newsfeed toggle for Facebook Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "Newsfeed toggle on Facebook Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -709,7 +709,7 @@
 					SafariServices,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ulriklyngs.Newsfeed-toggle-for-Facebook.Extension";
-				PRODUCT_NAME = "Newsfeed toggle for Facebook Extension";
+				PRODUCT_NAME = "Newsfeed toggle on Facebook Extension";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -730,7 +730,7 @@
 				DEVELOPMENT_TEAM = 7YEYWQKK25;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Newsfeed toggle for Facebook";
+				INFOPLIST_KEY_CFBundleDisplayName = "Newsfeed toggle on Facebook";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -749,7 +749,7 @@
 					WebKit,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ulriklyngs.Newsfeed-toggle-for-Facebook";
-				PRODUCT_NAME = "Newsfeed toggle for Facebook";
+				PRODUCT_NAME = "Newsfeed toggle on Facebook";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -768,7 +768,7 @@
 				DEVELOPMENT_TEAM = 7YEYWQKK25;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "iOS (App)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Newsfeed toggle for Facebook";
+				INFOPLIST_KEY_CFBundleDisplayName = "Newsfeed toggle on Facebook";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -787,7 +787,7 @@
 					WebKit,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ulriklyngs.Newsfeed-toggle-for-Facebook";
-				PRODUCT_NAME = "Newsfeed toggle for Facebook";
+				PRODUCT_NAME = "Newsfeed toggle on Facebook";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -799,7 +799,7 @@
 		D7DBE5FE275B664300585E64 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Newsfeed toggle for Facebook.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Newsfeed toggle on Facebook.entitlements";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
@@ -807,7 +807,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Newsfeed toggle for Facebook Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "Newsfeed toggle on Facebook Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -821,7 +821,7 @@
 					SafariServices,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ulriklyngs.Newsfeed-toggle-for-Facebook.Extension";
-				PRODUCT_NAME = "Newsfeed toggle for Facebook Extension";
+				PRODUCT_NAME = "Newsfeed toggle on Facebook Extension";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -832,7 +832,7 @@
 		D7DBE5FF275B664300585E64 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Newsfeed toggle for Facebook.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Newsfeed toggle on Facebook.entitlements";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
@@ -840,7 +840,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Newsfeed toggle for Facebook Extension";
+				INFOPLIST_KEY_CFBundleDisplayName = "Newsfeed toggle on Facebook Extension";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -854,7 +854,7 @@
 					SafariServices,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ulriklyngs.Newsfeed-toggle-for-Facebook.Extension";
-				PRODUCT_NAME = "Newsfeed toggle for Facebook Extension";
+				PRODUCT_NAME = "Newsfeed toggle on Facebook Extension";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -868,14 +868,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Newsfeed toggle for Facebook.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Newsfeed toggle on Facebook.entitlements";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 7YEYWQKK25;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Newsfeed toggle for Facebook";
+				INFOPLIST_KEY_CFBundleDisplayName = "Newsfeed toggle on Facebook";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -892,7 +892,7 @@
 					WebKit,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ulriklyngs.Newsfeed-toggle-for-Facebook";
-				PRODUCT_NAME = "Newsfeed toggle for Facebook";
+				PRODUCT_NAME = "Newsfeed toggle on Facebook";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -905,14 +905,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Newsfeed toggle for Facebook.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Newsfeed toggle on Facebook.entitlements";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 7YEYWQKK25;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Newsfeed toggle for Facebook";
+				INFOPLIST_KEY_CFBundleDisplayName = "Newsfeed toggle on Facebook";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -929,7 +929,7 @@
 					WebKit,
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ulriklyngs.Newsfeed-toggle-for-Facebook";
-				PRODUCT_NAME = "Newsfeed toggle for Facebook";
+				PRODUCT_NAME = "Newsfeed toggle on Facebook";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -939,7 +939,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D7DBE58E275B664100585E64 /* Build configuration list for PBXProject "Newsfeed toggle for Facebook" */ = {
+		D7DBE58E275B664100585E64 /* Build configuration list for PBXProject "Newsfeed toggle on Facebook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D7DBE5F4275B664300585E64 /* Debug */,
@@ -948,7 +948,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D7DBE5F6275B664300585E64 /* Build configuration list for PBXNativeTarget "Newsfeed toggle for Facebook Extension (iOS)" */ = {
+		D7DBE5F6275B664300585E64 /* Build configuration list for PBXNativeTarget "Newsfeed toggle on Facebook Extension (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D7DBE5F7275B664300585E64 /* Debug */,
@@ -957,7 +957,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D7DBE5FA275B664300585E64 /* Build configuration list for PBXNativeTarget "Newsfeed toggle for Facebook (iOS)" */ = {
+		D7DBE5FA275B664300585E64 /* Build configuration list for PBXNativeTarget "Newsfeed toggle on Facebook (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D7DBE5FB275B664300585E64 /* Debug */,
@@ -966,7 +966,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D7DBE5FD275B664300585E64 /* Build configuration list for PBXNativeTarget "Newsfeed toggle for Facebook Extension (macOS)" */ = {
+		D7DBE5FD275B664300585E64 /* Build configuration list for PBXNativeTarget "Newsfeed toggle on Facebook Extension (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D7DBE5FE275B664300585E64 /* Debug */,
@@ -975,7 +975,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D7DBE601275B664300585E64 /* Build configuration list for PBXNativeTarget "Newsfeed toggle for Facebook (macOS)" */ = {
+		D7DBE601275B664300585E64 /* Build configuration list for PBXNativeTarget "Newsfeed toggle on Facebook (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D7DBE602275B664300585E64 /* Debug */,
