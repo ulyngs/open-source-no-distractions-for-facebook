@@ -10,6 +10,11 @@ div[aria-label="Facebook"] ul.thodolrn.ojvp67qx.taijpn5t.buofh1pr.j83agx80.aovyd
     display: none !important;
 }
 
+/**** hide Watch link ****/
+a[aria-label^="Watch"] {
+    display: none !important;
+}
+
 /****** CENTRE OF FRONT PAGE ********/
 /* hide stories */
 div[data-pagelet="Stories"] {
