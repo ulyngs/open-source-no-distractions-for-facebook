@@ -35,6 +35,10 @@ p {
     margin-bottom: 2em;
 }
 
+.a-toggle {
+    margin-bottom: 5px;
+}
+
 a:visited {
     color: blue;
 }
