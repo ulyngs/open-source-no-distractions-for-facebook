@@ -100,6 +100,19 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
             
+            chrome.tabs.sendMessage(tabs[0].id, {method: "checkWatchMobile"}, function(response) {
+                
+                var watchCheckboxMobile = document.getElementById('watchToggleMobile');
+                
+                if(response.method == "checkWatchMobile"){
+                    if(response.text === "visible"){
+                        watchCheckboxMobile.checked = true;
+                    } else {
+                        watchCheckboxMobile.checked = false;
+                    }
+                }
+            });
+            
         }
     });
     
@@ -200,6 +213,21 @@ document.addEventListener('DOMContentLoaded', function() {
       chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
           chrome.tabs.sendMessage(tabs[0].id, {method: "changeWatch"}, function(response) {
               if(response.method == "changeWatch"){
+                  if(response.text === "watch visible"){
+                      console.log("Watch prompt is visible")
+                  } else {
+                      console.log("Watch prompt is hidden")
+                  }
+              }
+          });
+        });
+    }, false);
+    
+    var watchButtonMobile = document.getElementById('watchToggleMobile');
+    watchButtonMobile.addEventListener('click', function() {
+      chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+          chrome.tabs.sendMessage(tabs[0].id, {method: "changeWatchMobile"}, function(response) {
+              if(response.method == "changeWatchMobile"){
                   if(response.text === "watch visible"){
                       console.log("Watch prompt is visible")
                   } else {

@@ -8,6 +8,7 @@ chrome.runtime.onMessage.addListener(
         storiesMobile = document.querySelector('#MStoriesTray');
         video = document.querySelector('div[data-pagelet="VideoChatHomeUnit"]');
         watch = document.querySelector('a[aria-label^="Watch"]');
+        watchMobile = document.querySelector('#mJewelNav ._4g34:nth-child(3)');
         
         
         // check for visibility
@@ -78,6 +79,16 @@ chrome.runtime.onMessage.addListener(
                 sendResponse({text: "visible", method: "checkWatch"});
             } else {
                 sendResponse({text: "hidden", method: "checkWatch"});
+            }
+        }
+        
+        if(request.method == "checkWatchMobile"){
+            if (watchMobile.style.display === "none") {
+                sendResponse({text: "hidden", method: "checkWatchMobile"});
+            } else if (watchMobile.style.display === "block") {
+                sendResponse({text: "visible", method: "checkWatchMobile"});
+            } else {
+                sendResponse({text: "hidden", method: "checkWatchMobile"});
             }
         }
         
@@ -177,6 +188,19 @@ chrome.runtime.onMessage.addListener(
             } else {
                 watch.style.display = "block";
                 sendResponse({text: "watch visible", method: "changeWatch"});
+            }
+        }
+        
+        if(request.method == "changeWatchMobile"){
+            if (watchMobile.style.display === "none") {
+                watchMobile.style.display = "block";
+                sendResponse({text: "watch visible", method: "changeWatchMobile"});
+            } else if (watchMobile.style.display === "block") {
+                watchMobile.style.display = "none";
+                sendResponse({text: "watch hidden", method: "changeWatchMobile"});
+            } else {
+                watchMobile.style.display = "block";
+                sendResponse({text: "watch visible", method: "changeWatchMobile"});
             }
         }
     }

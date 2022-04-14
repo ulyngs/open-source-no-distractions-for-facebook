@@ -11,13 +11,19 @@ div[aria-label="Facebook"] ul.thodolrn.ojvp67qx.taijpn5t.buofh1pr.j83agx80.aovyd
 }
 
 /**** hide Watch link ****/
+/* desktop */
 a[aria-label^="Watch"] {
+    display: none;
+}
+
+/* mobile */
+#mJewelNav ._4g34:nth-child(3) {
     display: none;
 }
 
 /****** CENTRE OF FRONT PAGE ********/
 /*** hide stories ***/
-/* laptop */
+/* desktop */
 div[data-pagelet="Stories"] {
     display: none;
 }
