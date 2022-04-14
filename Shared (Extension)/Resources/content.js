@@ -5,7 +5,10 @@ chrome.runtime.onMessage.addListener(
         mobileFeed = document.querySelector('#m_news_feed_stream');
         chatElements = document.querySelectorAll('div[data-pagelet="RightRail"] div[data-visualcompletion="ignore-dynamic"] > div[class = "l9j0dhe7"');
         stories = document.querySelector('div[data-pagelet="Stories"]');
+        storiesMobile = document.querySelector('#MStoriesTray');
         video = document.querySelector('div[data-pagelet="VideoChatHomeUnit"]');
+        watch = document.querySelector('a[aria-label^="Watch"]');
+        
         
         // check for visibility
         if(request.method == "checkFeed"){
@@ -48,6 +51,16 @@ chrome.runtime.onMessage.addListener(
             }
         }
         
+        if(request.method == "checkStoriesMobile"){
+            if (storiesMobile.style.display === "none") {
+                sendResponse({text: "hidden", method: "checkStoriesMobile"});
+            } else if (storiesMobile.style.display === "block") {
+                sendResponse({text: "visible", method: "checkStoriesMobile"});
+            } else {
+                sendResponse({text: "hidden", method: "checkStoriesMobile"});
+            }
+        }
+        
         if(request.method == "checkVideo"){
             if (video.style.display === "none") {
                 sendResponse({text: "hidden", method: "checkVideo"});
@@ -55,6 +68,16 @@ chrome.runtime.onMessage.addListener(
                 sendResponse({text: "visible", method: "checkVideo"});
             } else {
                 sendResponse({text: "hidden", method: "checkVideo"});
+            }
+        }
+        
+        if(request.method == "checkWatch"){
+            if (watch.style.display === "none") {
+                sendResponse({text: "hidden", method: "checkWatch"});
+            } else if (watch.style.display === "block") {
+                sendResponse({text: "visible", method: "checkWatch"});
+            } else {
+                sendResponse({text: "hidden", method: "checkWatch"});
             }
         }
         
@@ -118,6 +141,19 @@ chrome.runtime.onMessage.addListener(
             }
         }
         
+        if(request.method == "changeStoriesMobile"){
+            if (storiesMobile.style.display === "none") {
+                storiesMobile.style.display = "block";
+                sendResponse({text: "stories visible", method: "changeStoriesMobile"});
+            } else if (storiesMobile.style.display === "block") {
+                storiesMobile.style.display = "none";
+                sendResponse({text: "stories hidden", method: "changeStoriesMobile"});
+            } else {
+                storiesMobile.style.display = "block";
+                sendResponse({text: "stories visible", method: "changeStoriesMobile"});
+            }
+        }
+        
         if(request.method == "changeVideo"){
             if (video.style.display === "none") {
                 video.style.display = "block";
@@ -128,6 +164,19 @@ chrome.runtime.onMessage.addListener(
             } else {
                 video.style.display = "block";
                 sendResponse({text: "video visible", method: "changeVideo"});
+            }
+        }
+        
+        if(request.method == "changeWatch"){
+            if (watch.style.display === "none") {
+                watch.style.display = "block";
+                sendResponse({text: "watch visible", method: "changeWatch"});
+            } else if (watch.style.display === "block") {
+                watch.style.display = "none";
+                sendResponse({text: "watch hidden", method: "changeWatch"});
+            } else {
+                watch.style.display = "block";
+                sendResponse({text: "watch visible", method: "changeWatch"});
             }
         }
     }

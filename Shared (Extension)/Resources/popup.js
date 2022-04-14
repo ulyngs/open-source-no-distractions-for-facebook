@@ -60,6 +60,19 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
             
+            chrome.tabs.sendMessage(tabs[0].id, {method: "checkStoriesMobile"}, function(response) {
+                
+                var storiesCheckboxMobile = document.getElementById('storiesToggleMobile');
+                
+                if(response.method == "checkStoriesMobile"){
+                    if(response.text === "visible"){
+                        storiesCheckboxMobile.checked = true;
+                    } else {
+                        storiesCheckboxMobile.checked = false;
+                    }
+                }
+            });
+            
             
             chrome.tabs.sendMessage(tabs[0].id, {method: "checkVideo"}, function(response) {
                 
@@ -70,6 +83,19 @@ document.addEventListener('DOMContentLoaded', function() {
                         videoCheckbox.checked = true;
                     } else {
                         videoCheckbox.checked = false;
+                    }
+                }
+            });
+            
+            chrome.tabs.sendMessage(tabs[0].id, {method: "checkWatch"}, function(response) {
+                
+                var watchCheckbox = document.getElementById('watchToggle');
+                
+                if(response.method == "checkWatch"){
+                    if(response.text === "visible"){
+                        watchCheckbox.checked = true;
+                    } else {
+                        watchCheckbox.checked = false;
                     }
                 }
             });
@@ -139,6 +165,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, false);
     
+    var storiesButtonMobile = document.getElementById('storiesToggleMobile');
+    storiesButtonMobile.addEventListener('click', function() {
+      chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+          chrome.tabs.sendMessage(tabs[0].id, {method: "changeStoriesMobile"}, function(response) {
+              if(response.method == "changeStoriesMobile"){
+                  if(response.text === "stories visible"){
+                      console.log("Stories are visible")
+                  } else {
+                      console.log("Stories are hidden")
+                  }
+              }
+          });
+        });
+    }, false);
+    
     var videoButton = document.getElementById('videoToggle');
     videoButton.addEventListener('click', function() {
       chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
@@ -148,6 +189,21 @@ document.addEventListener('DOMContentLoaded', function() {
                       console.log("Video prompt is visible")
                   } else {
                       console.log("Video prompt is hidden")
+                  }
+              }
+          });
+        });
+    }, false);
+    
+    var watchButton = document.getElementById('watchToggle');
+    watchButton.addEventListener('click', function() {
+      chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+          chrome.tabs.sendMessage(tabs[0].id, {method: "changeWatch"}, function(response) {
+              if(response.method == "changeWatch"){
+                  if(response.text === "watch visible"){
+                      console.log("Watch prompt is visible")
+                  } else {
+                      console.log("Watch prompt is hidden")
                   }
               }
           });

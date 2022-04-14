@@ -12,14 +12,22 @@ div[aria-label="Facebook"] ul.thodolrn.ojvp67qx.taijpn5t.buofh1pr.j83agx80.aovyd
 
 /**** hide Watch link ****/
 a[aria-label^="Watch"] {
-    display: none !important;
+    display: none;
 }
 
 /****** CENTRE OF FRONT PAGE ********/
-/* hide stories */
+/*** hide stories ***/
+/* laptop */
 div[data-pagelet="Stories"] {
     display: none;
 }
+/* mobile */
+#MStoriesTray {
+    display: none;
+}
+
+
+MStoriesTray
 
 /* hide video chatting prompt */
 div[data-pagelet="VideoChatHomeUnit"] {
