@@ -32,9 +32,6 @@ div[data-pagelet="Stories"] {
     display: none;
 }
 
-
-MStoriesTray
-
 /* hide video chatting prompt */
 div[data-pagelet="VideoChatHomeUnit"] {
     display: none;
