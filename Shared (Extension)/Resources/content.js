@@ -3,10 +3,10 @@ chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
         feed = document.querySelector('.pedkr2u6.tn0ko95a.pnx7fd3z div[role="feed"]');
         mobileFeed = document.querySelector('#m_news_feed_stream');
-        chatElements = document.querySelectorAll('div[data-pagelet="RightRail"] div[data-visualcompletion="ignore-dynamic"] > div[class = "l9j0dhe7"');
-        stories = document.querySelector('div[data-pagelet="Stories"]');
+        chatElements = document.querySelectorAll('div[role="complementary"] div[data-visualcompletion="ignore-dynamic"] > div[class="l9j0dhe7"]');
+        stories = document.querySelector('div[data-pagelet="Stories"], div[aria-label="Stories"]');
         storiesMobile = document.querySelector('#MStoriesTray');
-        video = document.querySelector('div[data-pagelet="VideoChatHomeUnit"]');
+        video = document.querySelector('div.du4w35lb.k4urcfbm.l9j0dhe7.e5nlhep0.ecm0bbzt');
         watch = document.querySelector('a[aria-label^="Watch"]');
         watchMobile = document.querySelector('#mJewelNav ._4g34:nth-child(3)');
         

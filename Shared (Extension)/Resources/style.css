@@ -24,7 +24,7 @@ a[aria-label^="Watch"] {
 /****** CENTRE OF FRONT PAGE ********/
 /*** hide stories ***/
 /* desktop */
-div[data-pagelet="Stories"] {
+div[data-pagelet="Stories"], div[aria-label="Stories"] {
     display: none;
 }
 /* mobile */
@@ -33,7 +33,7 @@ div[data-pagelet="Stories"] {
 }
 
 /* hide video chatting prompt */
-div[data-pagelet="VideoChatHomeUnit"] {
+div.du4w35lb.k4urcfbm.l9j0dhe7.e5nlhep0.ecm0bbzt {
     display: none;
 }
 
@@ -61,8 +61,13 @@ div[data-pagelet="RightRail"] > div > span > div > div.l9j0dhe7 {
     display: none !important;
 }
 
+div[role="complementary"] .cxgpxx05 > div > span > div > .l9j0dhe7 {
+    display: none;
+}
+
+
 /* hide chat side bar */
-div[data-pagelet="RightRail"] div[data-visualcompletion="ignore-dynamic"] > div[class="l9j0dhe7"] {
+div[role="complementary"] div[data-visualcompletion="ignore-dynamic"] > div[class="l9j0dhe7"] {
     visibility: hidden;
 }
 
