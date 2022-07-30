@@ -20,6 +20,10 @@ a[aria-label^="Watch"] {
 #mJewelNav ._4g34:nth-child(3) {
     display: none;
 }
+#screen-root div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(2) > div.m:nth-child(2) > div.m:nth-child(4) > div.m:nth-child(1),
+#screen-root div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(2) > div.m:nth-child(2) > div.m:nth-child(4) > div.m:nth-child(3) {
+    visibility: hidden;
+}
 
 /****** CENTRE OF FRONT PAGE ********/
 /*** hide stories ***/
@@ -28,7 +32,8 @@ div[data-pagelet="Stories"], div[aria-label="Stories"] {
     display: none;
 }
 /* mobile */
-#MStoriesTray {
+#MStoriesTray,
+#screen-root div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(5) {
     display: none;
 }
 
@@ -49,7 +54,8 @@ div[data-pagelet="GroupFeed"] div.feed {
 }
 
 /* hide newsfeed on iphone */
-#m_news_feed_stream {
+#m_news_feed_stream,
+#screen-root div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(n+6) {
     display: none;
 }
 

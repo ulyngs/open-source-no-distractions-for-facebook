@@ -2,13 +2,13 @@
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
         feed = document.querySelector('.pedkr2u6.tn0ko95a.pnx7fd3z div[role="feed"]');
-        mobileFeed = document.querySelector('#m_news_feed_stream');
+        mobileFeed = document.querySelectorAll('#screen-root div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(n+6)');
         chatElements = document.querySelectorAll('div[role="complementary"] div[data-visualcompletion="ignore-dynamic"] > div[class="l9j0dhe7"]');
         stories = document.querySelector('div[data-pagelet="Stories"], div[aria-label="Stories"]');
-        storiesMobile = document.querySelector('#MStoriesTray');
+        storiesMobile = document.querySelector('#screen-root div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(5)');
         video = document.querySelector('div.du4w35lb.k4urcfbm.l9j0dhe7.e5nlhep0.ecm0bbzt');
         watch = document.querySelector('a[aria-label^="Watch"]');
-        watchMobile = document.querySelector('#mJewelNav ._4g34:nth-child(3)');
+        watchMobile = document.querySelectorAll('#screen-root div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(2) > div.m:nth-child(2) > div.m:nth-child(4) > div.m:nth-child(1), #screen-root div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(2) > div.m:nth-child(2) > div.m:nth-child(4) > div.m:nth-child(3)');
         
         
         // check for visibility
@@ -23,9 +23,9 @@ chrome.runtime.onMessage.addListener(
         }
         
         if(request.method == "checkMobileFeed"){
-            if (mobileFeed.style.display === "none") {
+            if (mobileFeed[0].style.display === "none") {
                 sendResponse({text: "hidden", method: "checkMobileFeed"});
-            } else if (mobileFeed.style.display === "block") {
+            } else if (mobileFeed[0].style.display === "block") {
                 sendResponse({text: "visible", method: "checkMobileFeed"});
             } else {
                 sendResponse({text: "hidden", method: "checkMobileFeed"});
@@ -83,9 +83,9 @@ chrome.runtime.onMessage.addListener(
         }
         
         if(request.method == "checkWatchMobile"){
-            if (watchMobile.style.display === "none") {
+            if (watchMobile[1].style.display === "none") {
                 sendResponse({text: "hidden", method: "checkWatchMobile"});
-            } else if (watchMobile.style.display === "block") {
+            } else if (watchMobile[1].style.display === "block") {
                 sendResponse({text: "visible", method: "checkWatchMobile"});
             } else {
                 sendResponse({text: "hidden", method: "checkWatchMobile"});
@@ -107,14 +107,26 @@ chrome.runtime.onMessage.addListener(
         }
         
         if(request.method == "changeMobileFeed"){
-            if (mobileFeed.style.display === "none") {
-                mobileFeed.style.display = "block";
+            if (mobileFeed[1].style.display === "none") {
+                //mobileFeed.style.display = "block";
+                for (var i = 0, max = mobileFeed.length; i < max; i++) {
+                    mobileFeed[i].style.display = "block";
+                }
+                
                 sendResponse({text: "mobileFeed visible", method: "changeMobileFeed"});
-            } else if (mobileFeed.style.display === "block") {
-                mobileFeed.style.display = "none";
+            } else if (mobileFeed[1].style.display === "block") {
+                //mobileFeed.style.display = "none";
+                for (var i = 0, max = mobileFeed.length; i < max; i++) {
+                    mobileFeed[i].style.display = "none";
+                }
+                
                 sendResponse({text: "mobileFeed hidden", method: "changeMobileFeed"});
             } else {
-                mobileFeed.style.display = "block";
+                //mobileFeed.style.display = "block";
+                for (var i = 0, max = mobileFeed.length; i < max; i++) {
+                    mobileFeed[i].style.display = "block";
+                }
+                
                 sendResponse({text: "mobileFeed visible", method: "changeMobileFeed"});
             }
         }
@@ -192,14 +204,23 @@ chrome.runtime.onMessage.addListener(
         }
         
         if(request.method == "changeWatchMobile"){
-            if (watchMobile.style.display === "none") {
-                watchMobile.style.display = "block";
+            if (watchMobile[1].style.visibility === "hidden") {
+                //watchMobile.style.display = "block";
+                for (var i = 0, max = watchMobile.length; i < max; i++) {
+                    watchMobile[i].style.visibility = "visible";
+                }
                 sendResponse({text: "watch visible", method: "changeWatchMobile"});
-            } else if (watchMobile.style.display === "block") {
-                watchMobile.style.display = "none";
+            } else if (watchMobile[1].style.visibility === "visible") {
+                //watchMobile.style.display = "none";
+                for (var i = 0, max = watchMobile.length; i < max; i++) {
+                    watchMobile[i].style.visibility = "hidden";
+                }
                 sendResponse({text: "watch hidden", method: "changeWatchMobile"});
             } else {
-                watchMobile.style.display = "block";
+                //watchMobile[1].style.display = "block";
+                for (var i = 0, max = watchMobile.length; i < max; i++) {
+                    watchMobile[i].style.visibility = "visible";
+                }
                 sendResponse({text: "watch visible", method: "changeWatchMobile"});
             }
         }
