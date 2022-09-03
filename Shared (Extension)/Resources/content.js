@@ -3,10 +3,10 @@
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
         feed = document.querySelector('.r6ydv39a.mfclru0v > .alzwoclg.jl2a5g8c.jcxyg2ei .cdum9rwi.pgra2bgq.ctyh02ob');
-        mobileFeed = document.querySelectorAll('#screen-root div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(n+6)');
+        mobileFeed = document.querySelectorAll('#screen-root div[data-screen-id="65549"] > div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(n+6)');
         chatElements = document.querySelectorAll('div[role="complementary"] div[data-visualcompletion="ignore-dynamic"] > div.om3e55n1');
         stories = document.querySelector('.alzwoclg.jl2a5g8c.jcxyg2ei.p8bdhjjv.q46jt4gp > .alzwoclg.om3e55n1.mfclru0v');
-        storiesMobile = document.querySelector('#screen-root div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(5)');
+        storiesMobile = document.querySelector('#screen-root div[data-screen-id="65549"] > div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(5)');
         watchMobile = document.querySelectorAll('#screen-root div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(2) > div.m:nth-child(2) > div.m:nth-child(4) > div.m:nth-child(1), #screen-root div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(2) > div.m:nth-child(2) > div.m:nth-child(4) > div.m:nth-child(3)');
         
         
@@ -62,9 +62,9 @@ chrome.runtime.onMessage.addListener(
         }
         
         if(request.method == "checkWatchMobile"){
-            if (watchMobile[1].style.display === "none") {
+            if (watchMobile[1].style.visibility === "hidden") {
                 sendResponse({text: "hidden", method: "checkWatchMobile"});
-            } else if (watchMobile[1].style.display === "block") {
+            } else if (watchMobile[1].style.visibility === "visible") {
                 sendResponse({text: "visible", method: "checkWatchMobile"});
             } else {
                 sendResponse({text: "hidden", method: "checkWatchMobile"});
@@ -179,5 +179,4 @@ chrome.runtime.onMessage.addListener(
         }
     }
 );
-
 
