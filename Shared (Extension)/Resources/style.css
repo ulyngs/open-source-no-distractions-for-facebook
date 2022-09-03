@@ -75,9 +75,20 @@ div[role="complementary"] .cxgpxx05 > div > span > div > .l9j0dhe7 {
     display: none;
 }
 
+/* 2022-09-03 FB's new layout */
+a[aria-label="Advertiser"] {
+    display: none;
+}
+div[role="complementary"] .q46jt4gp > div > span > div > .om3e55n1 .alzwoclg.cqf1kptm.siwo0mpr.gu5uzgus .jroqu855.nthtkgg5 > h3.jxuftiz4.jwegzro5.hl4rid49.icdlwmnq.gvxzyvdx.aeinzg81 {
+    display: none;
+}
+div[role="complementary"] .q46jt4gp > div > span > div {
+    height: 15px;
+}
 
 /* hide chat side bar */
-div[role="complementary"] div[data-visualcompletion="ignore-dynamic"] > div[class="l9j0dhe7"] {
+div[role="complementary"] div[data-visualcompletion="ignore-dynamic"] > div[class="l9j0dhe7"],
+div[role="complementary"] div[data-visualcompletion="ignore-dynamic"] > div.om3e55n1 {
     visibility: hidden;
 }
 
