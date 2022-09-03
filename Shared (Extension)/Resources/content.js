@@ -1,13 +1,11 @@
 // content.js
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
-        feed = document.querySelector('.pedkr2u6.tn0ko95a.pnx7fd3z div[role="feed"]');
+        feed = document.querySelector('.r6ydv39a.mfclru0v > .alzwoclg.jl2a5g8c.jcxyg2ei .cdum9rwi.pgra2bgq.ctyh02ob');
         mobileFeed = document.querySelectorAll('#screen-root div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(n+6)');
         chatElements = document.querySelectorAll('div[role="complementary"] div[data-visualcompletion="ignore-dynamic"] > div[class="l9j0dhe7"]');
-        stories = document.querySelector('div[data-pagelet="Stories"], div[aria-label="Stories"]');
+        stories = document.querySelector('.alzwoclg.jl2a5g8c.jcxyg2ei.p8bdhjjv.q46jt4gp > .alzwoclg.om3e55n1.mfclru0v');
         storiesMobile = document.querySelector('#screen-root div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(5)');
-        video = document.querySelector('div.du4w35lb.k4urcfbm.l9j0dhe7.e5nlhep0.ecm0bbzt');
-        watch = document.querySelector('a[aria-label^="Watch"]');
         watchMobile = document.querySelectorAll('#screen-root div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(2) > div.m:nth-child(2) > div.m:nth-child(4) > div.m:nth-child(1), #screen-root div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(2) > div.m:nth-child(2) > div.m:nth-child(4) > div.m:nth-child(3)');
         
         
@@ -59,26 +57,6 @@ chrome.runtime.onMessage.addListener(
                 sendResponse({text: "visible", method: "checkStoriesMobile"});
             } else {
                 sendResponse({text: "hidden", method: "checkStoriesMobile"});
-            }
-        }
-        
-        if(request.method == "checkVideo"){
-            if (video.style.display === "none") {
-                sendResponse({text: "hidden", method: "checkVideo"});
-            } else if (video.style.display === "block") {
-                sendResponse({text: "visible", method: "checkVideo"});
-            } else {
-                sendResponse({text: "hidden", method: "checkVideo"});
-            }
-        }
-        
-        if(request.method == "checkWatch"){
-            if (watch.style.display === "none") {
-                sendResponse({text: "hidden", method: "checkWatch"});
-            } else if (watch.style.display === "block") {
-                sendResponse({text: "visible", method: "checkWatch"});
-            } else {
-                sendResponse({text: "hidden", method: "checkWatch"});
             }
         }
         
@@ -174,32 +152,6 @@ chrome.runtime.onMessage.addListener(
             } else {
                 storiesMobile.style.display = "block";
                 sendResponse({text: "stories visible", method: "changeStoriesMobile"});
-            }
-        }
-        
-        if(request.method == "changeVideo"){
-            if (video.style.display === "none") {
-                video.style.display = "block";
-                sendResponse({text: "video visible", method: "changeVideo"});
-            } else if (video.style.display === "block") {
-                video.style.display = "none";
-                sendResponse({text: "video hidden", method: "changeVideo"});
-            } else {
-                video.style.display = "block";
-                sendResponse({text: "video visible", method: "changeVideo"});
-            }
-        }
-        
-        if(request.method == "changeWatch"){
-            if (watch.style.display === "none") {
-                watch.style.display = "block";
-                sendResponse({text: "watch visible", method: "changeWatch"});
-            } else if (watch.style.display === "block") {
-                watch.style.display = "none";
-                sendResponse({text: "watch hidden", method: "changeWatch"});
-            } else {
-                watch.style.display = "block";
-                sendResponse({text: "watch visible", method: "changeWatch"});
             }
         }
         
