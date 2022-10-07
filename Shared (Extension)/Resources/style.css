@@ -35,7 +35,8 @@ a[aria-label^="Watch"] {
 
 /* mobile */
 #MStoriesTray,
-#screen-root div[data-screen-id="65549"] > div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(5) {
+#screen-root div[data-screen-id="65549"] > div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(5),
+#screen-root div[data-screen-id="65549"] > div[data-mcomponent="MContainer"] > div.m.displayed:nth-of-type(4) /* 2022-10-07 */ {
     display: none;
 }
 
