@@ -28,7 +28,8 @@ a[aria-label^="Watch"] {
 /****** CENTRE OF FRONT PAGE ********/
 /*** hide stories/reels/rooms ***/
 /* desktop */
-.alzwoclg.jl2a5g8c.jcxyg2ei.p8bdhjjv.q46jt4gp > .alzwoclg.om3e55n1.mfclru0v {
+.alzwoclg.jl2a5g8c.jcxyg2ei.p8bdhjjv.q46jt4gp > .alzwoclg.om3e55n1.mfclru0v,
+.x78zum5.x1q0g3np.xl56j7k.x1yztbdb.x1y1aw1k /* new layout */ {
     display: none;
 }
 
