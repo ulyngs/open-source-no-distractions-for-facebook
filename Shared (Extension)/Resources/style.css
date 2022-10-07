@@ -43,17 +43,14 @@ a[aria-label^="Watch"] {
 /*** NEWSFEED ***/
 /** LAPTOP **/
 /* hide newsfeed */
-.pedkr2u6.tn0ko95a.pnx7fd3z div[role="feed"] {
+.pedkr2u6.tn0ko95a.pnx7fd3z div[role="feed"],
+.r6ydv39a.mfclru0v > .alzwoclg.jl2a5g8c.jcxyg2ei .cdum9rwi.pgra2bgq.ctyh02ob, /* 2022-09-03 */
+#ssrb_feed_start + div /* 2022-10-07 */ {
     visibility: hidden;
 }
 /* MAKE SURE FEED IS STILL PRESENT ON GROUPS */
 div[data-pagelet="GroupFeed"] div.feed {
     display: block;
-}
-
-/* 2022-09-03: hide newsfeed on FB's updated layout */
-.r6ydv39a.mfclru0v > .alzwoclg.jl2a5g8c.jcxyg2ei .cdum9rwi.pgra2bgq.ctyh02ob {
-    visibility: hidden;
 }
 
 
@@ -88,7 +85,8 @@ div[role="complementary"] .q46jt4gp > div > span > div {
 
 /* hide chat side bar */
 div[role="complementary"] div[data-visualcompletion="ignore-dynamic"] > div[class="l9j0dhe7"],
-div[role="complementary"] div[data-visualcompletion="ignore-dynamic"] > div.om3e55n1 {
+div[role="complementary"] div[data-visualcompletion="ignore-dynamic"] > div.om3e55n1,
+div[role="complementary"] div[data-visualcompletion="ignore-dynamic"] > div.x1n2onr6 /* 2022-10-07 */ {
     visibility: hidden;
 }
 

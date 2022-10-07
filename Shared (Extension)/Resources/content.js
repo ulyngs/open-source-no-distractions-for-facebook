@@ -2,9 +2,9 @@
 
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
-        feed = document.querySelector('.r6ydv39a.mfclru0v > .alzwoclg.jl2a5g8c.jcxyg2ei .cdum9rwi.pgra2bgq.ctyh02ob');
+        feed = document.querySelector('#ssrb_feed_start + div');
         mobileFeed = document.querySelectorAll('#screen-root div[data-screen-id="65549"] > div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(n+6)');
-        chatElements = document.querySelectorAll('div[role="complementary"] div[data-visualcompletion="ignore-dynamic"] > div.om3e55n1');
+        chatElements = document.querySelectorAll('div[role="complementary"] div[data-visualcompletion="ignore-dynamic"] > div.x1n2onr6');
         stories = document.querySelector('.x78zum5.x1q0g3np.xl56j7k.x1yztbdb.x1y1aw1k');
         storiesMobile = document.querySelector('#screen-root div[data-screen-id="65549"] > div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(5)');
         watchMobile = document.querySelectorAll('#screen-root div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(2) > div.m:nth-child(2) > div.m:nth-child(4) > div.m:nth-child(1), #screen-root div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(2) > div.m:nth-child(2) > div.m:nth-child(4) > div.m:nth-child(3)');
