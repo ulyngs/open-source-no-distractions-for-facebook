@@ -809,7 +809,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 1.0.12;
+				MARKETING_VERSION = 2022.10.07;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -842,7 +842,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 1.0.12;
+				MARKETING_VERSION = 2022.10.07;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -878,7 +878,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 1.0.12;
+				MARKETING_VERSION = 2022.10.07;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -915,7 +915,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 1.0.12;
+				MARKETING_VERSION = 2022.10.07;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
