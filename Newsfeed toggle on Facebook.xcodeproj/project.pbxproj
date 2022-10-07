@@ -796,7 +796,7 @@
 				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Newsfeed toggle on Facebook.entitlements";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 7YEYWQKK25;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -809,7 +809,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 2022.09.03;
+				MARKETING_VERSION = 1.0.12;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -829,7 +829,7 @@
 				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Newsfeed toggle on Facebook.entitlements";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 7YEYWQKK25;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -842,7 +842,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 2022.09.03;
+				MARKETING_VERSION = 1.0.12;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -865,7 +865,7 @@
 				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Newsfeed toggle on Facebook.entitlements";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 7YEYWQKK25;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -878,7 +878,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 2022.09.03;
+				MARKETING_VERSION = 1.0.12;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
@@ -902,7 +902,7 @@
 				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Newsfeed toggle on Facebook.entitlements";
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = 7YEYWQKK25;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -915,7 +915,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MARKETING_VERSION = 2022.09.03;
+				MARKETING_VERSION = 1.0.12;
 				OTHER_LDFLAGS = (
 					"-framework",
 					SafariServices,
