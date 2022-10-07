@@ -40,6 +40,10 @@ a[aria-label^="Watch"] {
     display: none;
 }
 
+#screen-root .filler {
+    background-color: white;
+}
+
 
 /*** NEWSFEED ***/
 /** LAPTOP **/
