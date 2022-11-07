@@ -48,9 +48,7 @@ a[aria-label^="Watch"] {
 /*** NEWSFEED ***/
 /** LAPTOP **/
 /* hide newsfeed */
-.pedkr2u6.tn0ko95a.pnx7fd3z div[role="feed"],
-.r6ydv39a.mfclru0v > .alzwoclg.jl2a5g8c.jcxyg2ei .cdum9rwi.pgra2bgq.ctyh02ob, /* 2022-09-03 */
-#ssrb_feed_start + div /* 2022-10-07 */ {
+div.x1hc1fzr.x1unhpq9.x6o7n8i #ssrb_feed_start + div /* 2022-10-07 */ {
     visibility: hidden;
 }
 /* MAKE SURE FEED IS STILL PRESENT ON GROUPS */
