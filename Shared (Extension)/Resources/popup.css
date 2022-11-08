@@ -39,9 +39,14 @@ p {
     margin-bottom: 5px;
 }
 
-a:visited {
-    color: blue;
+a {
+    color: lightgray;
 }
+
+a:visited {
+    color: darkgray;
+}
+
 
 
 /******* HIDE IRRELEVANT TOGGLES *******/
@@ -58,3 +63,6 @@ a:visited {
         display: none;
     }
 }
+
+
+
