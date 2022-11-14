@@ -1,74 +1,70 @@
 // content.js
 
+
+function toggleElement(method){
+    
+}
+
+
+
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
-        feed = document.querySelector('#ssrb_feed_start + div');
+        feed = document.querySelector('div[role="main"] h3.x1heor9g.x1qlqyl8.x1pd3egz.x1a2a7pz.xzpqnlu.x1hyvwdk.xjm9jq1.x6ikm8r.x10wlt62.x10l6tqk.x1i1rx1s + div');
         mobileFeed = document.querySelectorAll('#screen-root div[data-screen-id="65549"] > div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(n+6)');
         chatElements = document.querySelectorAll('div[role="complementary"] div[data-visualcompletion="ignore-dynamic"] > div.x1n2onr6');
         stories = document.querySelector('.x78zum5.x1q0g3np.xl56j7k.x1yztbdb.x1y1aw1k');
         storiesMobile = document.querySelector('#screen-root div[data-screen-id="65549"] > div[data-mcomponent="MContainer"] > div.m.displayed:nth-of-type(4)');
         watchMobile = document.querySelectorAll('#screen-root div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(2) > div.m:nth-child(2) > div.m:nth-child(4) > div.m:nth-child(1), #screen-root div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(2) > div.m:nth-child(2) > div.m:nth-child(4) > div.m:nth-child(3)');
         
+        function checkElement(method_to_send, element, css_to_change, is_multi_element){
+            if (is_multi_element){
+                element_to_check = element[0];
+            } else {
+                element_to_check = element;
+            }
+            
+            if (css_to_change === "visibility"){
+                if (element_to_check.style.visibility === "hidden") {
+                    sendResponse({text: "hidden", method: method_to_send});
+                } else if (element_to_check.style.visibility === "visible") {
+                    sendResponse({text: "visible", method: method_to_send});
+                } else {
+                    sendResponse({text: "hidden", method: method_to_send});
+                }
+            } else if (css_to_change === "display"){
+                if (element_to_check.style.display === "none") {
+                    sendResponse({text: "hidden", method: method_to_send});
+                } else if (element_to_check.style.display === "block") {
+                    sendResponse({text: "visible", method: method_to_send});
+                } else {
+                    sendResponse({text: "hidden", method: method_to_send});
+                }
+            }
+        };
         
         // check for visibility
         if(request.method == "checkFeed"){
-            if (feed.style.visibility === "hidden") {
-                sendResponse({text: "hidden", method: "checkFeed"});
-            } else if (feed.style.visibility === "visible") {
-                sendResponse({text: "visible", method: "checkFeed"});
-            } else {
-                sendResponse({text: "hidden", method: "checkFeed"});
-            }
+            checkElement("checkFeed", feed, "visibility", is_multi_element = false);
         }
         
         if(request.method == "checkMobileFeed"){
-            if (mobileFeed[0].style.display === "none") {
-                sendResponse({text: "hidden", method: "checkMobileFeed"});
-            } else if (mobileFeed[0].style.display === "block") {
-                sendResponse({text: "visible", method: "checkMobileFeed"});
-            } else {
-                sendResponse({text: "hidden", method: "checkMobileFeed"});
-            }
+            checkElement("checkMobileFeed", feed, "display", is_multi_element = true);
         }
         
         if(request.method == "checkChat"){
-            if (chatElements[0].style.visibility === "hidden") {
-                sendResponse({text: "hidden", method: "checkChat"});
-            } else if (chatElements[0].style.visibility === "visible") {
-                sendResponse({text: "visible", method: "checkChat"});
-            } else {
-                sendResponse({text: "joddem", method: "checkChat"});
-            }
+            checkElement("checkChat", chatElements, "visibility", is_multi_element = true);
         }
         
         if(request.method == "checkStories"){
-            if (stories.style.display === "none") {
-                sendResponse({text: "hidden", method: "checkStories"});
-            } else if (stories.style.display === "block") {
-                sendResponse({text: "visible", method: "checkStories"});
-            } else {
-                sendResponse({text: "hidden", method: "checkStories"});
-            }
+            checkElement("checkStories", stories, "display", is_multi_element = false);
         }
         
         if(request.method == "checkStoriesMobile"){
-            if (storiesMobile.style.display === "none") {
-                sendResponse({text: "hidden", method: "checkStoriesMobile"});
-            } else if (storiesMobile.style.display === "block") {
-                sendResponse({text: "visible", method: "checkStoriesMobile"});
-            } else {
-                sendResponse({text: "hidden", method: "checkStoriesMobile"});
-            }
+            checkElement("checkStoriesMobile", storiesMobile, "display", is_multi_element = false);
         }
         
         if(request.method == "checkWatchMobile"){
-            if (watchMobile[1].style.visibility === "hidden") {
-                sendResponse({text: "hidden", method: "checkWatchMobile"});
-            } else if (watchMobile[1].style.visibility === "visible") {
-                sendResponse({text: "visible", method: "checkWatchMobile"});
-            } else {
-                sendResponse({text: "hidden", method: "checkWatchMobile"});
-            }
+            checkElement("checkStoriesMobile", storiesMobile, "visibility", is_multi_element = true);
         }
         
         // change visibility
