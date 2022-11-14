@@ -1,7 +1,7 @@
 // content.js
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
-        feed = document.querySelector('div[role="main"] h3.x1heor9g.x1qlqyl8.x1pd3egz.x1a2a7pz.xzpqnlu.x1hyvwdk.xjm9jq1.x6ikm8r.x10wlt62.x10l6tqk.x1i1rx1s + div');
+        feed = document.querySelector('#ssrb_feed_start + div');
         mobileFeed = document.querySelectorAll('#screen-root div[data-screen-id="65549"] > div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(n+6)');
         chatElements = document.querySelectorAll('div[role="complementary"] div[data-visualcompletion="ignore-dynamic"] > div.x1n2onr6');
         stories = document.querySelector('.x78zum5.x1q0g3np.xl56j7k.x1yztbdb.x1y1aw1k');
@@ -61,6 +61,7 @@ chrome.runtime.onMessage.addListener(
         
         // change visibility
         function toggleElement(element, css_to_change, is_multi_element){
+            
             if (is_multi_element){
                 element_to_check = element[0];
             } else {
