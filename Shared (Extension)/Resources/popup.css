@@ -3,55 +3,27 @@
 }
 
 body {
-    width: 200px;
+    width: 180px;
     padding: 10px;
 
     font-family: system-ui;
     text-align: center;
 }
 
-@media (prefers-color-scheme: dark) {
-    /* Dark Mode styles go here. */
+.smaller-font {
+    font-size: 0.85em;
 }
 
-button {
-  background-color: #0f91f3; /* Facebook-blue */
-  border: none;
-  color: white;
-  padding: 10px 5px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-}
-
-p {
-    font-size: 0.9em;
-}
-
-.content-toggles {
-    text-align: left;
-    font-size: 1em;
-    margin-bottom: 2em;
-}
-
-.a-toggle {
+.a-toggle,
+#save-toggle {
     margin-bottom: 5px;
+    text-align: left;
 }
-
-a {
-    color: lightgray;
-}
-
-a:visited {
-    color: darkgray;
-}
-
 
 
 /******* HIDE IRRELEVANT TOGGLES *******/
 /* iPhone */
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 768px) {
     .platform-ipad-mac {
         display: none;
     }
@@ -64,5 +36,101 @@ a:visited {
     }
 }
 
+a:visited {
+    color: darkgray;
+}
+a {
+    color: darkgray;
+}
+
+.github-link {
+    clear: both;
+    padding-top: 10px;
+}
 
 
+/* for hoverable dropdown */
+.dropbtn {
+  background-color: white;
+  color: black;
+  padding: 4px;
+  font-size: 0.9em;
+  border: none;
+  margin-left: 0px;
+}
+
+.dropdown .dropbtn:hover {
+    background-color: #008CBA;
+    color: white
+}
+.dropbtn:disabled {
+  background-color: #ccc;
+  color: #888;
+}
+.dropbtn:disabled:hover {
+  background-color: #ccc;
+  color: #888;
+}
+
+.dropdown {
+  position: relative;
+  display: block;
+  clear: both;
+}
+
+.dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  padding: 12px 10px 5px 14px;
+  width: 140px;
+  font-size: 0.95em;
+  border-radius: 3px;
+}
+
+.dropdown-content .a-toggle:hover {
+    background-color: #ddd;
+}
+
+.colored-font {
+    color: darkgray;
+}
+
+.shown {
+  display: block !important;
+}
+
+
+.toggle-wrapper {
+    text-align: left;
+}
+
+#saveButton {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    /* Dark Mode styles go here. */
+    .colored-font {
+        color: lightgray;
+    }
+    
+    .dropdown .dropdown-content {
+      background-color: black;
+    }
+    
+    .dropdown-content .a-toggle:hover {
+        background-color: #292929;
+    }
+}

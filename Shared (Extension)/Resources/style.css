@@ -1,4 +1,6 @@
-/******** MENU BAR ********/
+/**************
+** FACEBOOK **
+**************/
 
 /**** hide gaming link ****/
 a[aria-label="Gaming"] {
@@ -10,72 +12,34 @@ div[aria-label="Facebook"] ul.thodolrn.ojvp67qx.taijpn5t.buofh1pr.j83agx80.aovyd
     display: none !important;
 }
 
-/**** hide Watch link ****/
+/*** feed ***/
+#ssrb_feed_start + div { visibility: hidden; }
+
+/*** stories ***/
 /* desktop */
-a[aria-label^="Watch"] {
-    display: none;
-}
+.x78zum5.x1q0g3np.xl56j7k.x1yztbdb.x1y1aw1k { display: none; }
 
 /* mobile */
-#mJewelNav ._4g34:nth-child(3) {
+#screen-root div[data-mcomponent="MContainer"] > div[data-mcomponent="MContainer"]:has(div[aria-label*="story"]) {
     display: none;
-}
-#screen-root div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(2) > div.m:nth-child(2) > div.m:nth-child(4) > div.m:nth-child(1),
-#screen-root div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(2) > div.m:nth-child(2) > div.m:nth-child(4) > div.m:nth-child(3) {
-    visibility: hidden;
 }
 
-/****** CENTRE OF FRONT PAGE ********/
-/*** hide stories/reels/rooms ***/
+
+/*** watch ***/
 /* desktop */
-.alzwoclg.jl2a5g8c.jcxyg2ei.p8bdhjjv.q46jt4gp > .alzwoclg.om3e55n1.mfclru0v,
-.x78zum5.x1q0g3np.xl56j7k.x1yztbdb.x1y1aw1k /* new layout */ {
-    display: none;
-}
+a[aria-label^="Watch"] { display: none; }
 
 /* mobile */
-#MStoriesTray,
-#screen-root div[data-screen-id="65549"] > div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(5),
-#screen-root div[data-screen-id="65549"] > div[data-mcomponent="MContainer"] > div.m.displayed:nth-of-type(4) /* 2022-10-07 */ {
+#screen-root div[data-mcomponent="MScreen"] div[data-mcomponent="MContainer"] div[data-mcomponent="MContainer"]:nth-child(2) div[role="button"]:nth-child(4) {
     display: none;
 }
 
-#screen-root .filler {
-    background-color: white;
+#screen-root div[data-mcomponent="MScreen"] div[data-mcomponent="MContainer"] div[data-mcomponent="MContainer"]:nth-child(2):has(div[role="button"]:nth-child(4)) {
+    background-color: white !important;
+    border-bottom: 2px solid #dadde1;
 }
 
-
-/*** NEWSFEED ***/
-/** LAPTOP **/
-/* hide newsfeed */
-#ssrb_feed_start + div /* 2022-10-07 */ {
-    visibility: hidden;
-}
-/* MAKE SURE FEED IS STILL PRESENT ON GROUPS */
-div[data-pagelet="GroupFeed"] div.feed {
-    display: block;
-}
-
-
-/* hide newsfeed on iphone */
-#m_news_feed_stream,
-#screen-root div[data-screen-id="65549"] > div[data-mcomponent="MContainer"] > div.m.displayed:nth-child(n+6) {
-    display: none;
-}
-
-
-/****** RIGHT SIDE BAR ********/
-/* hide sponsored content */
-div[data-pagelet="RightRail"] > div > div > div.l9j0dhe7,
-div[data-pagelet="RightRail"] > div > span > div > div.l9j0dhe7 {
-    display: none !important;
-}
-
-div[role="complementary"] .cxgpxx05 > div > span > div > .l9j0dhe7 {
-    display: none;
-}
-
-/* 2022-09-03 FB's new layout */
+/*** sponsored ****/
 a[aria-label="Advertiser"] {
     display: none;
 }
@@ -85,11 +49,3 @@ div[role="complementary"] .q46jt4gp > div > span > div > .om3e55n1 .alzwoclg.cqf
 div[role="complementary"] .q46jt4gp > div > span > div {
     height: 15px;
 }
-
-/* hide chat side bar */
-div[role="complementary"] div[data-visualcompletion="ignore-dynamic"] > div[class="l9j0dhe7"],
-div[role="complementary"] div[data-visualcompletion="ignore-dynamic"] > div.om3e55n1,
-div[role="complementary"] div[data-visualcompletion="ignore-dynamic"] > div.x1n2onr6 /* 2022-10-07 */ {
-    visibility: hidden;
-}
-
